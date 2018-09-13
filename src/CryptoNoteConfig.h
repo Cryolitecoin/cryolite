@@ -3,6 +3,7 @@
 // Copyright (c) 2014-2018, The Forknote developers
 // Copyright (c) 2018, Ryo Currency Project
 // Copyright (c) 2016-2018, The Karbowanec developers
+// Copyright (c) 2016-2018, The Cryolite developers
 //
 // This file is part of Bytecoin.
 //
@@ -26,7 +27,7 @@
 namespace CryptoNote {
 namespace parameters {
 
-const uint64_t DIFFICULTY_TARGET                             = 240; // seconds
+const uint64_t DIFFICULTY_TARGET                             = 440; // seconds
 const uint64_t CRYPTONOTE_MAX_BLOCK_NUMBER                   = 500000000;
 const size_t   CRYPTONOTE_MAX_BLOCK_BLOB_SIZE                = 500000000;
 const size_t   CRYPTONOTE_MAX_TX_SIZE                        = 1000000000;
@@ -39,7 +40,7 @@ const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 60;
 const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW_V1          = 11;
 
 // MONEY_SUPPLY - total number coins to be generated
-const uint64_t MONEY_SUPPLY                                  = UINT64_C(10000000000000000000);
+const uint64_t MONEY_SUPPLY                                  = UINT64_C(18000000000000000000);
 const uint64_t COIN                                          = UINT64_C(1000000000000);
 const uint64_t TAIL_EMISSION_REWARD                          = UINT64_C(1000000000000);
 const size_t CRYPTONOTE_COIN_VERSION                         = 1;
@@ -146,7 +147,7 @@ const uint32_t P2P_IDLE_CONNECTION_KILL_INTERVAL             = (5 * 60);      //
 const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "8f80f9a5a434a9f1510d13336228debfee9c918ce505efe225d8c94d045fa115";
 
 const char* const SEED_NODES[] = { 
- // "cryolite.sytes.net:19789"
+  "cryolite.sytes.net:19789"
 };
 
 struct CheckpointData {
